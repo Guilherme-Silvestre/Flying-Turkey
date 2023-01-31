@@ -1,0 +1,14 @@
+suite_namespace: common\tests\unit
+actor: UnitTester
+bootstrap: false
+modules:
+    enabled:
+        - Asserts
+        - Yii2:
+            part: fixtures
+            transaction: false
+    config:
+        Db:
+            dsn: 'mysql:host=127.0.0.1;dbname=cbd_test'
+            user: 'root'
+            password: ''
